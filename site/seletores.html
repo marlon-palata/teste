@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.pai > {
+   
+}
+.pai > .filho{
+    border: 1px solid black;
+}
+
+div > p{
+    background-color: pink;
+}
+
+.pai > p{
+    background-color: orange;
+}
+
+div > .filho {
+color: blue; /* Aplica cor azul apenas ao parágrafo com a classe
+'filho' que é um filho direto do div */
+}
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <h1>teste</h1>
+        <div class="filho">
+            <h1>Oi testando a class pai e filho com o ></h1>
+        </div>
+    </div>
+    <div class="pai">
+        <div>
+            <h1>Div que não é filho</h1>
+        </div>
+    </div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt eveniet explicabo deleniti quae asperiores nihil esse tempora temporibus cupiditate, debitis illum deserunt odit libero quibusdam perspiciatis est dicta praesentium?</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore distinctio, nisi eum cumque voluptas quidem! Eveniet quisquam ullam ex distinctio corrupti perspiciatis nemo, aperiam vel facilis vero officia eius tenetur!</p>
+    </div>
+
+    <div class="pai">
+        <p>Eu sou um parágrafo direto.</p>
+        <div>
+        <p>Eu sou um parágrafo dentro de um div.</p>
+        </div>
+    </div>
+
+    <div>
+        <p class="filho">Eu sou um filho com classe.</p>
+        <div>
+        <p>Eu sou um parágrafo dentro de um div.</p>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .tabela, th, td{
+    border-collapse: collapse; /*define a separação entre as bordas*/
+    padding: 20px;
+    text-align: right;
+    border: 1px solid black;
+}
+th{
+    background-color: lightgray;
+}
+.tabela2 {
+  border-collapse: separate;
+  border-spacing: 50px;
+  padding: 20px;
+  border: 4px solid black;
+
+}
+
+    </style>
+</head>
+<body>
+    <h1>TABELAS</h1>
+
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Linguagens</th>
+                <th>frameworks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python</td>
+                <td>Bootstrap</td>              
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>NodeJs</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Laravel</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Rodapé</td>
+                    <td>Rodapé</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+
+<br>
+
+    <table class="tabela2">
+        <thead>
+            <tr>
+                <th>Comidas</th>
+                <th>Temperos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Japonesa</td>
+                <td>Shoyu</td>              
+            </tr>
+            <tr>
+                <td>Italiana</td>
+                <td>Pimenta do Reino</td>
+            </tr>
+            <tr>
+                <td>Mexicana</td>
+                <td>Pimenta Malagueta</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Rodapé</td>
+                    <td>Rodapé</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>
